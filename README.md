@@ -32,7 +32,7 @@
     <li>templates/ :  비밀번호 리셋을 위한 이메일에 첨부할 html을 포함</li>
     </ul>
     <br/>
-<li>frontend/ : 프론트엔드(vue.js) 폴더 - 이미 만들어진 template으로부터 시작</li>
+<li>frontend/ : 프론트엔드(vue.js) 폴더 - 이미 만들어진 template을 다운받아 거기서 부터 시작함</li>
     <ul>
     <li>src/</li>
         <ul>
