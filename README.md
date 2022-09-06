@@ -20,7 +20,9 @@
         <ul>
         <li>buildAnalysis.py :   서버 실행시에 인스턴스를 생성하여 예측결과를 내놓는데 사용하는 Forecast class와 예측을 위한 날씨정보를 얻는데 사용하는 weatherForecast class를 포함</li>
         <li>cron.py :   실시간 정보를 부하없이 제공하기 위해 각 사용자의 호출마다 따릉이 api를 호출하지 않고, 서버에서 5분마다 따릉이 api를 호출한 결과를 저장 후 제공하기 위한 cronjob. 또 1시간마다 그 히스토리를 DB에 저장하여 향후 분석의 window로 사용함.</li>
-        <li>models.py :  대여소, 회원, 댓글, 대여히스토리의 모델을 담음</li>
+        <li>models.py :  대여소, 회원, 댓글, 대여히스토리의 모델을 담당</li>
+        <li>permissions.py :  비로그인 시에도 서비스를 이용할 수 있도록 IsAdminUserOrReadOnly, IsAuthenticatedOrReadAndWrite를 만듦</li>
+        <li>views.py :  ModelViewset을 이용. Admin과 User의 view를 분리. search filter, partial update, 중복 아이디체크, 대여소 즐겨찾기 field의 json pasre, 비밀번호 변경, 비밀번호 확인과 암호화 등을 구현</li>
         </ul>
     </ul>
 <li>제작목적 : 따릉이 대여소의 지도, 실시간 분석결과를 제공하여 따릉이 잠재적 고객의 편의성을 높이기 위한 취지로 제작</li>
