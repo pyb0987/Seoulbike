@@ -31,6 +31,7 @@
         </ul>
     <li>templates/ :  비밀번호 리셋을 위한 이메일에 첨부할 html을 포함</li>
     </ul>
+    <br/>
 <li>frontend/ : 프론트엔드(vue.js) 폴더</li>
     <ul>
     <li>src/</li>
