@@ -24,13 +24,20 @@
         <li>permissions.py :  비로그인 시에도 서비스를 이용할 수 있도록 IsAdminUserOrReadOnly, IsAuthenticatedOrReadAndWrite를 만듦</li>
         <li>views.py :  ModelViewset을 이용. Admin과 User의 view를 분리. search filter, partial update, 중복 아이디체크, 대여소 즐겨찾기 field의 json pasre, 비밀번호 변경, 비밀번호 확인과 암호화 등을 구현</li>
         </ul>
+    <li>static/ :  백엔드에서 사용할 정적 파일들을 보관</li>
+         <ul>
+        <li>models/ :  각 대여소의 머신러닝 모델</li>
+        <li>scalers/ :  각 머신러닝 모델의 X_train을 스케일할 때 사용했던 스케일러</li>
+        </ul>
+    <li>templates/ :  비밀번호 리셋을 위한 이메일에 첨부할 html을 포함</li>
     </ul>
-<li>제작목적 : 따릉이 대여소의 지도, 실시간 분석결과를 제공하여 따릉이 잠재적 고객의 편의성을 높이기 위한 취지로 제작</li>
-
-<li>제작기간 : 2022-07-13 ~ 2022-08-11(1달)</li>
-<li>제작목적 : 따릉이 대여소의 지도, 실시간 분석결과를 제공하여 따릉이 잠재적 고객의 편의성을 높이기 위한 취지로 제작</li>
-<li>프레임워크 : Django v4.0.3 / Vue.js v2.6.14</li>
-
+<li>frontend/ : 프론트엔드(vue.js) 폴더</li>
+    <ul>
+    <li>src/</li>
+        <ul>
+        <li>components/</li>
+        </ul>
+    </ul>
 </ul>
 <br/>
 <br/>
