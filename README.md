@@ -101,3 +101,11 @@
 오차 계산을 제대로 할 수 없게 했다. 때문에 TransformedTargetRegressor를 이용해 fitting을 해보기도 했다. scoring으로 알려진 것은 rmsle, rmse, mae 등이었지만,
 대여소 1개소의 자전거의 대수를 예측하려는 서비스의 특성상 mae를 scoring function으로 채택했다. 그러나 결국 왜곡된 y값은 제대로 된 값을 내놓는 데 오히려 악영향을
 미쳤고, 결과적으로는 모델이 0에서 약하게 진동하는 값만을 내놓도록 하는 문제점을 보였다.<br/><br/>
+
+
+      <object data="backend/static/figures/pred_cbrt_comparison.html"
+  width="800"
+  height="500"
+  class="frame"
+  type="text/html">
+  </object>
