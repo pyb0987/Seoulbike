@@ -32,12 +32,32 @@
     <li>templates/ :  비밀번호 리셋을 위한 이메일에 첨부할 html을 포함</li>
     </ul>
     <br/>
-<li>frontend/ : 프론트엔드(vue.js) 폴더</li>
+<li>frontend/ : 프론트엔드(vue.js) 폴더 - 이미 만들어진 template으로부터 시작</li>
     <ul>
     <li>src/</li>
         <ul>
-        <li>components/</li>
+        <li>components/ : 페이지의 구성 요소를 담은 폴더</li>
+            <ul>
+            <li>Analysis/ : 분석 소개 페이지의 Lazy loading component들</li>
+            <li>bike/ : 지도 페이지에서 자주 사용되는 댓글 template과 지도 template을 보관</li>    
+            <li>forms/SubmitCard.vue :  form의 일반적인 형태를 구성</li>   
+            <li>AnalysisBoard.vue :  대여소의 예측결과와 히스토리를 그래프로 제공하는 component</li>  
+            <li>bikeTable.vue :  대여소 테이블 component</li>  
+            <li>reviewTable.vue :  댓글의 작성과 수정, 비밀번호 작성, 페이징을 담당하는 component</li> 
+            </ul>
+        <li>locales/ : 2개 언어 지원을 위한 i18n의 kr.json, en.json을 보관</li>    
+        <li>login/auth.js :  jwt 로그인 관리를 위한 localstorage 세팅과 refresh token의 시용 및 재발급을 담당</li>    
         </ul>
+        <li>pages/ : 페이지를 담은 폴더</li>
+            <ul>
+            <li>Forms/ : 회원가입을 위한 Wizard</li>
+            <li>seoulbike/ : 관리자 페이지, 마이 페이지, 비밀번호 리셋 페이지, 지도 페이지를 보관</li>    
+            <li>EDA-1.vue, EDA-2.vue, MachineLearning.vue : 분석 소개 페이지</li>   
+            <li>Seoulbike.vue : 로그인과 지도보기를 할 수 있는 홈페이지</li>  
+            </ul>
+        <li>plugins/errorHandler.js : 에러 alert 출력을 위한 플러그인</li>
+        <li>storage/userspots.js : localStorage를 이용한 대여소 즐겨찾기 기능 구현</li>
+        <li>store/index.js : Vuex를 이용한 유저정보 store</li>
     </ul>
 </ul>
 <br/>
