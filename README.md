@@ -12,15 +12,15 @@
 <br/>
 <h4>구성</h4>
 <ul>
-<li>backend/ : 백엔드(장고) 폴더</li>
+<li>backend/ :   백엔드(장고) 폴더</li>
     <ul>
-    <li>auth/ : 로그인 사용자의 백엔드 jwt인증을 담당</li>
-    <li>config/ : local, prod의 setting과 관리자 api를 담당</li>
-    <li>seoulbike/ : 주기능 app</li>
+    <li>auth/ :     로그인 사용자의 백엔드 jwt인증을 담당</li>
+    <li>config/ :   local, prod의 setting과 관리자 api를 담당</li>
+    <li>seoulbike/ :     주기능 app</li>
         <ul>
-        <li>buildAnalysis.py : 서버 실행시에 인스턴스를 생성하여 예측결과를 내놓는데 사용하는 Forecast class와 예측을 위한 날씨정보를 얻는데 사용하는 weatherForecast class를 포함</li>
-        <li>cron.py : 실시간 정보를 부하없이 제공하기 위해 각 사용자의 호출마다 따릉이 api를 호출하지 않고, 서버에서 5분마다 따릉이 api를 호출한 결과를 저장 후 제공하기 위한 cronjob. 또 1시간마다 그 히스토리를 DB에 저장하여 향후 분석의 window로 사용함.</li>
-        <li>models.py : 대여소, 회원, 댓글, 대여히스토리의 모델을 담음</li>
+        <li>buildAnalysis.py :   서버 실행시에 인스턴스를 생성하여 예측결과를 내놓는데 사용하는 Forecast class와 예측을 위한 날씨정보를 얻는데 사용하는 weatherForecast class를 포함</li>
+        <li>cron.py :   실시간 정보를 부하없이 제공하기 위해 각 사용자의 호출마다 따릉이 api를 호출하지 않고, 서버에서 5분마다 따릉이 api를 호출한 결과를 저장 후 제공하기 위한 cronjob. 또 1시간마다 그 히스토리를 DB에 저장하여 향후 분석의 window로 사용함.</li>
+        <li>models.py :  대여소, 회원, 댓글, 대여히스토리의 모델을 담음</li>
         </ul>
     </ul>
 <li>제작목적 : 따릉이 대여소의 지도, 실시간 분석결과를 제공하여 따릉이 잠재적 고객의 편의성을 높이기 위한 취지로 제작</li>
