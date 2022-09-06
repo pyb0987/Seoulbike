@@ -103,9 +103,7 @@
 미쳤고, 결과적으로는 모델이 0에서 약하게 진동하는 값만을 내놓도록 하는 문제점을 보였다.<br/><br/>
 
 
-      <object data="backend/static/figures/pred_cbrt_comparison.html"
-  width="800"
-  height="500"
-  class="frame"
-  type="text/html">
-  </object>
+<object data="backend/static/figures/pred_cbrt_comparison.html"
+width="800"
+height="500"
+class="frame" type="text/html"></object>
