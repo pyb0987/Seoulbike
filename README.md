@@ -156,3 +156,16 @@ window를 사용한다면 지금 가지고 있지 않은, 47시간 이후의 정
 <br/>
 <h6>홈페이지 및 로그인</h6>
 <img src="img/login.gif" />
+<ul>
+    <li>로그인, 회원가입, 언어변경, 지도보기 링크 제공</li>
+    <li>아이디, 비밀번호 무결성 확인(Vee-validation)</li>
+</ul>
+<h6>회원가입</h6>
+<img src="img/admin.gif" />
+<ul>
+    <li>이름, 이메일 등 무결성 확인</li>
+    <li>아이디 validation할 시기에 아이디 중복체크</li>
+    <li>form에 사진 추가 가능</li>
+    <li>지도 기능 탑재(Leaflet)</li>
+    <li>지도 기능 사용할 시 GPS로 현재 위치로 이동(vue-geolocation)</li>
+</ul>
