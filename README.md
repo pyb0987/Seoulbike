@@ -162,6 +162,7 @@ window를 사용한다면 지금 가지고 있지 않은, 47시간 이후의 정
     <li>로그인시 이전에 있었던 페이지로 이동</li>
 </ul>
 <br/><br/>
+
 <h6>회원가입</h6>
 <img src="img/signup.gif" />
 <ul>
@@ -170,4 +171,43 @@ window를 사용한다면 지금 가지고 있지 않은, 47시간 이후의 정
     <li>form에 사진 추가 가능</li>
     <li>지도 기능 탑재(Leaflet)</li>
     <li>지도 기능 사용할 시 GPS로 현재 위치로 이동(vue-geolocation)</li>
+    <li>즐겨찾기 스팟은 "123, 456"과 같이 string으로 저장한 후 백엔드에서 처리</li>
 </ul>
+<br/><br/>
+
+<h6>언어설정</h6>
+<img src="img/language.gif" />
+<ul>
+    <li>한국어와 영어, 2개 언어 지원</li>
+</ul>
+<br/><br/>
+
+<h6>비밀번호 찾기</h6>
+<img src="img/resetpw.gif" />
+<ul>
+    <li>회원가입 시 작성한 이메일로 비밀번호 찾기 기능(Django-rest-password-reset)</li>
+    <li>gmail stmp 세팅으로 새 비밀번호 설정을 위한 링크를 전송</li>
+    <li>token값을 form에 포함하여 전송하고 백엔드에서 처리</li>
+</ul>
+<br/><br/>
+
+<h6>지도 보기</h6>
+<img src="img/map.gif" />
+<ul>
+    <li>메인기능 담당 페이지</li>
+    <li>gps기능 허용시, 접속지점 근처로 이동</li>
+    <li>맵 위의 개체 수를 일정 수 이내로 유지하도록(렉 방지) 하는 lazy loading</li>
+    <li>5분 간격으로 자전거 대수 제공</li>
+</ul>
+<br/><br/>
+
+<h6>대여소 검색</h6>
+<img src="img/mapsearch.gif" />
+<ul>
+    <li>차트 기능 제공(chart.js)</li>
+    <li>페에징, 검색, 지도이동 및 즐겨찾기 기능이 포함된 테이블</li>
+    <li>유저가 즐겨찾기 해놓은 대여소를 모아볼 수 있음. 아이콘과 지도마커의 색상을 다르게 표시하여 구분</li>
+    <li>로그인 없이도 서비스를 제공하기 위해 즐겨찾기 정보는 local storage에 저장</li>
+    <li>로그인 유저의 경우에는 DB의 내용과 합치고 로그아웃 시에 다시 반영</li>
+</ul>
+<br/><br/>
