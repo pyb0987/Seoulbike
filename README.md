@@ -159,9 +159,11 @@ window를 사용한다면 지금 가지고 있지 않은, 47시간 이후의 정
 <ul>
     <li>로그인, 회원가입, 언어변경, 지도보기 링크 제공</li>
     <li>아이디, 비밀번호 무결성 확인(Vee-validation)</li>
+    <li>로그인시 이전에 있었던 페이지로 이동</li>
 </ul>
+<br/><br/>
 <h6>회원가입</h6>
-<img src="img/admin.gif" />
+<img src="img/signup.gif" />
 <ul>
     <li>이름, 이메일 등 무결성 확인</li>
     <li>아이디 validation할 시기에 아이디 중복체크</li>
